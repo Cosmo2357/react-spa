@@ -1,10 +1,6 @@
-import { useState } from "react";
 import { Link } from "react-router";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-white dark:bg-gray-900 shadow-md fixed top-0 w-full z-50">

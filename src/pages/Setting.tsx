@@ -1,36 +1,9 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
 import { useMainStore, useUserDataStore } from "../store/main";
 import { Button } from "@/components/ui/button";
-
-type Character = {
-  id: number;
-  name: string;
-  status: string;
-  species: string;
-  image: string;
-};
 
 export default function Setting() {
   const { user } = useUserDataStore();
   const { count, increase, decrease } = useMainStore();
-  const [characters, setCharacters] = useState<Character[]>([]);
-
-  // 🎯 Fetch characters from The Rick and Morty API
-  useEffect(() => {
-    const fetchCharacters = async () => {
-      try {
-        const response = await axios.get(
-          "https://rickandmortyapi.com/api/character",
-        );
-        setCharacters(response.data.results.slice(0, 24)); // Get only the first 24 characters
-      } catch (error) {
-        console.error("Error fetching characters:", error);
-      }
-    };
-
-    fetchCharacters();
-  }, []);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-100">
