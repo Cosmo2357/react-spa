@@ -1,5 +1,5 @@
 # React 19 SPA Boilerplate
-
+## Demo: https://c441b8d5.react-spa-51g.pages.dev/login
 ## Overview
 This is a **React 19 SPA (Single Page Application) boilerplate** designed for scenarios where the backend is handled separately via REST APIs. While modern best practices often favor SSR (Server-Side Rendering) or SSG (Static Site Generation) for performance and efficiency, this setup intentionally leverages SPA mode to optimize frontend-backend separation.
 
