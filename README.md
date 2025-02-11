@@ -12,3 +12,6 @@ Pls `check components/ui`
 
 https://ui.shadcn.com/docs/components/accordion
 
+# Deployed on Cloudflare Pages from Github
+
+
