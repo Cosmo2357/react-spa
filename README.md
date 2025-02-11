@@ -116,7 +116,7 @@ For the full list of dependencies, check `package.json`.
 ## 📌 Notes
 - **React 19 introduces built-in form handling, reducing the need for external libraries like React Hook Form in the future.**
 - **This setup is optimized for scenarios where the frontend communicates with a separately managed backend via REST APIs.**
-- **For larger-scale applications, consider SSR/SSG approaches like Next.js.**
+- **For larger-scale applications, consider SSR/SSG approaches like Remix and Next.js.**
 
 ---
 
